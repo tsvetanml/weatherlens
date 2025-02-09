@@ -5,13 +5,16 @@ import { fetchWeather } from "@/app/lib/fetchWeather";
 import { useState } from "react";
 import SearchBar from "../searchBar";
 import WeatherCard from "../weatherCard";
+import WeatherChart from "../weatherCharts";
 import WeatherDetails from "../weatherDetails";
 
 export default function WeatherDashboard() {
   const [weather, setWeather] = useState<any | null>(null);
+  const [city, setCity] = useState<string>("Madrid");
 
-  const handleSearch = async (city: string) => {
-    const data = await fetchWeather(city);
+  const handleSearch = async (newCity: string) => {
+    setCity(newCity);
+    const data = await fetchWeather(newCity);
     setWeather(data);
   };
 
@@ -25,6 +28,7 @@ export default function WeatherDashboard() {
         <>
           <WeatherCard weather={weather} />
           <WeatherDetails weather={weather} />
+          <WeatherChart city={city} />
         </>
       )}
     </div>
