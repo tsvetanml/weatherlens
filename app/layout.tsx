@@ -1,5 +1,7 @@
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import BackgroundParticles from "./components/backgroundParticles";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -25,9 +27,12 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-br from-blue-900 to-gray-900 text-white flex items-center justify-center min-h-screen`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-br from-blue-900 to-gray-900 text-white flex items-center justify-center min-h-screen relative`}
       >
-        <div className="w-full max-w-4xl p-6">{children}</div>
+        {/* Fondo animado */}
+        <BackgroundParticles />
+
+        <div className="w-full max-w-6xl z-10">{children}</div>
       </body>
     </html>
   );
