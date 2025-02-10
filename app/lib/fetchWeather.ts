@@ -29,7 +29,7 @@ export async function fetchCitySuggestions(query: string) {
   }
 }
 
-export async function fetchForecast(city: string) {
+export async function fetchForecast(city: string): Promise<any[]> {
   try {
     const API_KEY = process.env.NEXT_PUBLIC_WEATHER_API_KEY;
     const BASE_URL = "https://api.openweathermap.org/data/2.5";

@@ -38,7 +38,10 @@ const BackgroundParticles = () => {
             enable: true,
             mode: "push",
           },
-          resize: true,
+          resize: {
+            enable: true,
+            delay: 0.5,
+          },
         },
         modes: {
           repulse: {
