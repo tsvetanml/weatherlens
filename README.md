@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌦️ WeatherLens - Dashboard del Clima
 
-## Getting Started
+WeatherLens es un **dashboard interactivo** que te permite consultar el clima en tiempo real con visualizaciones atractivas. 📊☀️🌧️
 
-First, run the development server:
+## 🚀 Características
 
-```bash
+✅ **Búsqueda de ciudades** con autocompletado.\
+✅ **Visualización de temperaturas máximas y mínimas** en gráficos separados.\
+✅ **Animaciones suaves** con Framer Motion.\
+✅ **Fondo animado interactivo** con `tsParticles`.\
+✅ **Diseño moderno y responsivo** con Next.js 15 y Tailwind CSS.
+
+## 🛠️ Tecnologías Usadas
+
+- **Next.js 15 (App Router)**
+- **TypeScript**
+- **Tailwind CSS**
+- **Framer Motion** (animaciones suaves)
+- **Recharts** (gráficos de temperatura)
+- **OpenWeatherMap API** (datos del clima)
+- **tsParticles** (fondo animado interactivo)
+
+## 🏗️ Instalación y Uso
+
+```sh
+# Clonar el repositorio
+git clone https://github.com/tu-usuario/weatherlens.git
+cd weatherlens
+
+# Instalar dependencias
+npm install
+
+# Agregar la clave de API de OpenWeatherMap en un archivo .env
+NEXT_PUBLIC_WEATHER_API_KEY=tu_api_key
+
+# Ejecutar la aplicación
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📌 Cómo Funciona
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1️⃣ **Ingresa una ciudad en la barra de búsqueda.**\
+2️⃣ **La barra de búsqueda se mueve hacia arriba** y los datos aparecen animados.\
+3️⃣ **Visualiza la temperatura actual, detalles adicionales y gráficos** con temperaturas máximas y mínimas.\
+4️⃣ **Explora el fondo animado** con partículas interactivas.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🖥️ Desarrollador
 
-## Learn More
+Desarrollado por **Tsvetan**.\
+📌 Portafolio: [tsvetan.pro](https://tsvetan.pro)\
+📌 GitHub: [@tsvetanml](https://github.com/tsvetanml)
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🌟 ¡Si te gusta este proyecto, dale una estrella en GitHub! 🌟
